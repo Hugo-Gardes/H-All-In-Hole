@@ -1,0 +1,52 @@
+{
+    "Items": [
+        {
+            "PositionX": 0.09183001518249512,
+            "PositionY": 0.3100000023841858,
+            "PositionZ": -1.992400050163269,
+            "RotationX": 0.0,
+            "RotationY": 0.0,
+            "RotationZ": 0.0,
+            "ScaleX": 0.30000001192092898,
+            "ScaleY": 0.30000001192092898,
+            "ScaleZ": 0.30000001192092898,
+            "PrefabName": "Cube"
+        },
+        {
+            "PositionX": 0.09183001518249512,
+            "PositionY": 0.3100000023841858,
+            "PositionZ": -0.16640007495880128,
+            "RotationX": 0.0,
+            "RotationY": 0.0,
+            "RotationZ": 0.0,
+            "ScaleX": 0.30000001192092898,
+            "ScaleY": 0.30000001192092898,
+            "ScaleZ": 0.30000001192092898,
+            "PrefabName": "Cube"
+        },
+        {
+            "PositionX": -1.4161700010299683,
+            "PositionY": 0.3100000023841858,
+            "PositionZ": -0.16640007495880128,
+            "RotationX": 0.0,
+            "RotationY": 0.0,
+            "RotationZ": 0.0,
+            "ScaleX": 0.30000001192092898,
+            "ScaleY": 0.30000001192092898,
+            "ScaleZ": 0.30000001192092898,
+            "PrefabName": "Cube"
+        },
+        {
+            "PositionX": -1.4161700010299683,
+            "PositionY": 0.3100000023841858,
+            "PositionZ": -1.242400050163269,
+            "RotationX": 0.0,
+            "RotationY": 0.0,
+            "RotationZ": 0.0,
+            "ScaleX": 0.30000001192092898,
+            "ScaleY": 0.30000001192092898,
+            "ScaleZ": 0.30000001192092898,
+            "PrefabName": "Cube"
+        }
+    ]
+}
