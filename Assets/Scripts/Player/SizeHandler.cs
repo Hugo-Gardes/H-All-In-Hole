@@ -25,7 +25,6 @@ public class SizeHandler : MonoBehaviour
     void Update()
     {
         float newScale = scaleFactor + playerData.Xp / 100f;
-        Debug.Log("Current XP: " + playerData.Xp + " | New Scale: " + newScale);
         if (newScale != oldScale)
         {
             oldScale = newScale;

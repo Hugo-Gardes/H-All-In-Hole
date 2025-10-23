@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Buttons : MonoBehaviour
 {
+    public GameObject settingsMenu;
     public string sceneName;
 
     public void OnQuitButtonPressed()
@@ -13,5 +14,11 @@ public class Buttons : MonoBehaviour
     public void OnStartButtonPressed()
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void OnSettingsButtonPressed()
+    {
+        settingsMenu.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
