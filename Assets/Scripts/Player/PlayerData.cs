@@ -1,10 +1,15 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerData : MonoBehaviour
 {
+    private float xp = 0f;
     private int score = 0;
     public int Score { get { return score; } }
+    public float Xp { get { return xp; } }
+
     public UpdateScore scoreBoard;
+    public TextMeshPro xpText;
 
     void Start()
     {
@@ -12,9 +17,45 @@ public class PlayerData : MonoBehaviour
         if (scoreBoard == null)
         {
             Debug.LogError("ScoreBoard not found in the scene.");
-        } else
+        }
+        else
         {
             scoreBoard.UpdateScoreText(score);
+        }
+
+        ResetScore();
+        ResetXp();
+    }
+
+    public void AddXp(float amount)
+    {
+        xp += amount;
+        if (xpText != null)
+        {
+            if (xp % 1 == 0)
+            {
+                xpText.text = ((int)xp).ToString();
+            }
+            else
+            {
+                xpText.text = xp.ToString("F2");
+            }
+        }
+    }
+
+    public void ResetXp()
+    {
+        xp = 0f;
+        if (xpText != null)
+        {
+            if (xp % 1 == 0)
+            {
+                xpText.text = ((int)xp).ToString();
+            }
+            else
+            {
+                xpText.text = xp.ToString("F2");
+            }
         }
     }
 

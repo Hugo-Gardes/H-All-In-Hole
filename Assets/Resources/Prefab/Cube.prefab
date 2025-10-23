@@ -155,3 +155,4 @@ MonoBehaviour:
   Name: MonCube
   PrefabName: Cube
   ScoreValue: 1
+  xpValue: 10.1

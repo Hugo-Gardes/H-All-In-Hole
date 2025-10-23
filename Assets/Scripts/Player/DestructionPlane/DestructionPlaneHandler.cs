@@ -19,6 +19,7 @@ public class DestructionPlaneHandler : MonoBehaviour
         if (cubeData != null && PlayerData != null)
         {
             PlayerData.AddScore(cubeData.ScoreValue);
+            PlayerData.AddXp(cubeData.xpValue);
         }
         Destroy(other.gameObject);
     }
