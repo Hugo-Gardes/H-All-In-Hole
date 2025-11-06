@@ -76,6 +76,7 @@ public class SoundMenu : MonoBehaviour
         soundEffectsVolume = soundEffectsSlider.value;
         soundEffectsInputField.text = soundEffectsVolume.ToString();
         audioMixer.SetFloat(audioMixerGroupSounds, Mathf.Log10(soundEffectsVolume / 100f) * 20f);
+        PlayerPrefs.SetFloat("SoundEffectsVolume", soundEffectsVolume);
     }
 
     public void SetSoundEffectsVolumeInputField()
@@ -89,5 +90,6 @@ public class SoundMenu : MonoBehaviour
         soundEffectsInputField.text = volume.ToString();
         soundEffectsSlider.value = soundEffectsVolume;
         audioMixer.SetFloat(audioMixerGroupSounds, Mathf.Log10(soundEffectsVolume / 100f) * 20f);
+        PlayerPrefs.SetFloat("SoundEffectsVolume", soundEffectsVolume);
     }
 }
