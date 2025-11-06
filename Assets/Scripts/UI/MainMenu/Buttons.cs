@@ -4,6 +4,7 @@ using UnityEngine;
 public class Buttons : MonoBehaviour
 {
     public GameObject settingsMenu;
+    public GameObject inventoryMenu;
     public string sceneName;
 
     public void OnQuitButtonPressed()
@@ -20,5 +21,10 @@ public class Buttons : MonoBehaviour
     {
         settingsMenu.SetActive(true);
         gameObject.SetActive(false);
+    }
+
+    public void OnInventoryButtonPressed()
+    {
+        inventoryMenu.SetActive(true);
     }
 }

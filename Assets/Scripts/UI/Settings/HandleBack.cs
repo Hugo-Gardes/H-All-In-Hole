@@ -7,7 +7,10 @@ public class HandleBack : MonoBehaviour
 
     public void openMenu()
     {
-        menuToOpen.SetActive(true);
+        if (menuToOpen != null)
+        {
+            menuToOpen.SetActive(true);
+        }
         gameObject.SetActive(false);
     }
 
