@@ -3540,6 +3540,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2715194327962634790, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
   m_PrefabInstance: {fileID: 8261406891277228811}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1980891612 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8440671548717893752, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+  m_PrefabInstance: {fileID: 8261406891277228811}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980891608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c860b50104b9944b971b7505e42462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandleBack
 --- !u!1 &2063034146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,10 +3731,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5999573525776153441, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292449129529104558, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292449129529104558, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292449129529104558, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1980891612}
+    - target: {fileID: 7292449129529104558, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292449129529104558, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: openMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292449129529104558, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: HandleBack, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292449129529104558, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7334419613289981142, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
       propertyPath: musicSource
       value: 
       objectReference: {fileID: 57157257}
+    - target: {fileID: 8044845906447524102, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7254902
+      objectReference: {fileID: 0}
     - target: {fileID: 8440671548717893752, guid: 89507f79ef32dc443b1451cd3a2cd2a5, type: 3}
       propertyPath: menuToOpen
       value: 
