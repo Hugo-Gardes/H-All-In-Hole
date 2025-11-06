@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DestructionPlaneHandler : MonoBehaviour
@@ -16,6 +17,10 @@ public class DestructionPlaneHandler : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         CubesData cubeData = other.GetComponent<CubesData>();
+        if (other.tag == "wall")
+        {
+            return;
+        }
         if (cubeData != null && PlayerData != null)
         {
             PlayerData.AddScore(cubeData.ScoreValue);

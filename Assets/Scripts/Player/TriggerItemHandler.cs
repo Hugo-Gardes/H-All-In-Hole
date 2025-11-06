@@ -7,7 +7,6 @@ public class TriggerItemHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered");
         if (other.gameObject.layer == NormalSphereLayer)
         {
             other.gameObject.layer = FallingSphereLayer;

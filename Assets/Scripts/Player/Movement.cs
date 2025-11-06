@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     private Vector3 direction;
     public InputActionReference moveAction;
+    public PlayerData playerData;
     public float speed = 5f;
 
     private void OnEnable()
@@ -41,6 +42,6 @@ public class Movement : MonoBehaviour
             move.Normalize();
         }
 
-        transform.Translate(speed * Time.deltaTime * move, Space.World);
+        transform.Translate(speed * (1 + playerData.Xp / 100f) * Time.deltaTime * move, Space.World);
     }
 }

@@ -5,6 +5,7 @@ public class SizeHandler : MonoBehaviour
     public float maxScale = 5f;
     public float scaleFactor = 1.0f;
     public PlayerData playerData;
+    public GameObject colliderObject;
 
     private float oldScale = 1f;
 
@@ -28,12 +29,17 @@ public class SizeHandler : MonoBehaviour
         if (newScale != oldScale)
         {
             oldScale = newScale;
-        }
-        if (newScale < maxScale)
+        } else
         {
-            transform.localScale = new Vector3(newScale, 1, newScale);
-            oldScale = newScale;
+            return;
         }
+        if (newScale > maxScale)
+        {
+            newScale = maxScale;
+        }
+        transform.localScale = new Vector3(newScale, 1, newScale);
+        colliderObject.transform.localScale = new Vector3(colliderObject.transform.localScale.x, colliderObject.transform.localScale.x, colliderObject.transform.localScale.z);
+        oldScale = newScale;
     }
 
 }
