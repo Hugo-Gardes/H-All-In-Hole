@@ -6,4 +6,5 @@ public class CubesData : MonoBehaviour
     public string PrefabName;
     public int ScoreValue = 1;
     public float xpValue = 1f;
+    public float minSizeEatable = 5f;
 }

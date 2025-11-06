@@ -7,6 +7,14 @@ public class ActivatePhysicToTriggeredItem : MonoBehaviour
     {
         if (other.CompareTag("Item"))
         {
+            if (other.TryGetComponent<CubesData>(out var cubesData))
+            {
+                float parentSize = gameObject.transform.parent.localScale.x;
+                if (parentSize < cubesData.minSizeEatable)
+                {
+                    return;
+                }
+            }
             if (other.TryGetComponent<Rigidbody>(out var rb))
             {
                 rb.useGravity = true;
